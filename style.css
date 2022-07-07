@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background-color: #202428;
+}
+.container{
+    width: 770px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    box-shadow: 3px 3px 6px 2px #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.radio{
+    width: 30px;
+    height: 13px;
+    background-color: rgba(229, 229, 229, 0.267);
+    border-radius: 10px;
+    transition: all .5s;
+}
+input:checked + label .radio{
+    background-color: #00ff55;
+}
+input{
+    display: none;
+}
+.image-con{
+    width: 770px;
+    height: 450px;
+}
+.image-con .slider img{
+    width: 770px;
+    height: 450px;
+    border-radius: 5px;
+}
+.image-con .slider{
+    position: absolute;
+    display: inline-flex;
+    transition: all .8s; 
+}
+#r1:checked~.container .image-con .slider{
+    left: 0;
+}
+#r2:checked~.container .image-con .slider{
+    left: -770px;
+}
+#r3:checked~.container .image-con .slider{
+    left: -1540px;
+}
+.main{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    width: 800px;
+    height: 500px;
+}
+.main label{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50% , 50%);
+}
+.main .l1{
+    left: 45%;
+}
+.main .l2{
+    left: 50%;
+}
+.main .l3{
+    left: 55%;
+}
